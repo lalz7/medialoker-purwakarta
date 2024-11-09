@@ -1,15 +1,17 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "src/beranda.html",
-        "use": "@vercel/static"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "beranda.html"
-      }
-    ]
-  }
+  "version": 2,
+  "public": true,
+  "name": "medialoker-purwakarta",
+  "builds": [
+    {
+      "src": "src/beranda.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/src/beranda.html"
+    }
+  ]
+}
