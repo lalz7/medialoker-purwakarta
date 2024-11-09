@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
       {
-        "src": "medialoker-purwakarta/index.html",
+        "src": "index.html",
         "use": "@vercel/static"
       }
     ],
     "routes": [
       {
         "src": "/(.medialoker-purwakarta*)",
-        "dest": "/medialoker-purwakarta/index.html"
+        "dest": "/index.html"
       }
     ]
   }
