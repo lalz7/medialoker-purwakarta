@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Rata kiri */
+    background-color: white; /* Ubah warna header menjadi putih */
+}
+
+.logo img {
+    height: 70px;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around; /* Membagi ruang secara merata */
+    background-color: #F6BB33; /* Ubah warna navbar */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10; /* Pastikan navbar berada di atas pop-up */
+}
+
+.navbar a {
+    padding: 10px;
+    color: black; /* Tulisan tidak berubah warna */
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Menyusun ikon di atas teks */
+    align-items: center;
+}
+
+.icon-container {
+    width: 40px; /* Lebar kontainer ikon */
+    height: 40px; /* Tinggi kontainer ikon */
+    border-radius: 50%; /* Membuat bulat */
+    background-color: transparent; /* Warna latar belakang awal */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s; /* Transisi halus */
+}
+
+.navbar a:hover .icon-container,
+.navbar a.active .icon-container {
+    background-color: #292E58; /* Ubah warna latar belakang ketika hover atau aktif */
+}
+
+.navbar a i {
+    color: #636363; /* Warna ikon */
+    transition: color 0.3s; /* Transisi halus */
+}
+
+.navbar a:hover i,
+.navbar a.active i {
+    color: white; /* Ubah warna ikon ketika hover atau aktif */
+}
+
+.whatsapp-popup {
+    position: fixed;
+    bottom: 90px; /* Naikkan pop-up di atas navbar */
+    right: 20px;
+    border-radius: 50%; /* Membuat bulat */
+    background-color: #292E58; /* Warna latar belakang pop-up */
+    padding: 10px; /* Ruang di dalam pop-up */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Bayangan untuk efek kedalaman */
+    transition: background-color 0.3s; /* Transisi halus */
+    z-index: 5; /* Pastikan pop-up berada di bawah navbar */
+}
+
+.whatsapp-popup a {
+    color: #F6BB33; /* Warna ikon telepon */
+    text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+.whatsapp-popup a:hover {
+    color: white; /* Ubah warna ikon saat hover */
+}
+
+.whatsapp-icon {
+    width: 50px; /* Lebar ikon */
+    height: 50px; /* Tinggi ikon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Membuat bulat */
+}
