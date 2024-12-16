@@ -6,12 +6,20 @@
     {
       "src": "src/beranda.html",
       "use": "@vercel/static"
+    },
+    {
+      "src": "src/styles.css",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
       "dest": "/src/beranda.html"
+    },
+    {
+      "src": "/styles.css",
+      "dest": "/src/styles.css"
     }
   ]
 }
